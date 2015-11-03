@@ -25,6 +25,7 @@ Even though I am more comfortable with Automation framework implementation in Ja
 <li>More Assertions like comparing the product names, Logout functionality - Did not implement just for the lack of time</li>
 <li>Parallelization of these test cases with different data instead of randomization </li>
 <li>Testing completed in Firefox and Chrome. Testing in Safari, Android and iOS is pending</li>
+<li>Externalize application home url and strings like 'Your cart has' words outside to a seperate json/ properties file</li>
 
 
     
