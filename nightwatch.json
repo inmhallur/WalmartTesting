@@ -1,0 +1,112 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "pageobjects",
+  "globals_path" : "data/prod",
+
+  "selenium" : {
+    "start_process" : false,
+    "server_path" : "",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "c:/walmarttesting/bin/chromedriver.exe",
+      "webdriver.ie.driver" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "./screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+		"chromeOptions" : {
+			"binary": "C://Program Files (x86)//Google//Chrome//Application//chrome.exe"
+		}
+      }
+    },
+	"safari" : {
+	"desiredCapabilities" : {
+		"browserName" : "safari",
+		"javascriptEnabled" : true,
+		"acceptSslCerts" : true
+		}
+	},
+	"iphone" : {
+		"launch_url" : "http://127.0.0.1:4723/wd/hub",
+		"selenium_port"  : 4723,
+		"selenium_host"  : "localhost",
+		"silent": true,
+		"screenshots" : {
+			"enabled" : false,
+			"path" : ""
+		},
+		"desiredCapabilities": {
+			"browserName": "iphone",
+			"platformName": "iOS",
+			"deviceName": "iPhone Simulator",
+			"version": "7.1",
+			"app": "PATH TO YOUR IPHONE EMULATOR APP",
+			"javascriptEnabled": true,
+			"acceptSslCerts": true
+		}
+	},
+	"ipad" : {
+		"launch_url" : "http://127.0.0.1:4723/wd/hub",
+		"selenium_port"  : 4723,
+		"selenium_host"  : "localhost",
+		"silent": true,
+		"screenshots" : {
+			"enabled" : false,
+			"path" : ""
+		},
+		"desiredCapabilities": {
+			"browserName": "ipad",
+			"platformName": "iOS",
+			"deviceName": "iPad Simulator",
+			"version": "7.1",
+			"app": "PATH TO YOUR IPAD EMULATOR APP",
+			"javascriptEnabled": true,
+			"acceptSslCerts": true
+		}
+	},
+	"android" : {
+		"launch_url" : "http://localhost:8080/wd/hub",
+		"selenium_port"  : 8080,
+		"selenium_host"  : "localhost",
+		"silent": true,
+		"screenshots" : {
+			"enabled" : false,
+			"path" : ""
+		},
+		"desiredCapabilities": {
+			"browserName": "android",
+			"platformName": "ANDROID",
+			"deviceName": "",
+			"version": "",
+			"javascriptEnabled": true,
+			"acceptSslCerts": true
+		}
+	}
+  }
+}
